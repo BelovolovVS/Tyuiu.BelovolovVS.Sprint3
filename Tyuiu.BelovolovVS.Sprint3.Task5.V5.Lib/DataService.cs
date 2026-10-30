@@ -9,16 +9,11 @@ namespace Tyuiu.BelovolovVS.Sprint3.Task5.V5.Lib
         {
             double sumSeries = 0;
 
-            int iStart = Math.Min(startValue1, stopValue1);
-            int iStop = Math.Max(startValue1, stopValue1);
-            int kStart = Math.Min(startValue2, stopValue2);
-            int kStop = Math.Max(startValue2, stopValue2);
-
-            for (int i = iStart; i <= iStop; i++)
+            for (int i = startValue1; i <= stopValue1; i++)
             {
-                for (int k = kStart; k <= kStop; k++)
+                for (int k = startValue2; k <= stopValue2; k++)
                 {
-                    sumSeries += (double)x / Math.Sin(k);
+                    sumSeries += x / Math.Sin(k);
                 }
             }
 
