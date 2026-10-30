@@ -36,6 +36,7 @@ namespace Tyuiu.BelovolovVS.Sprint3.Task2.V30
             Console.WriteLine("***************************************************************************");
 
             double res = ds.GetMultiplySeries(value, startValue, stopValue);
+            
             Console.WriteLine($"Сумма ряда = {res}");
 
             Console.ReadKey();
