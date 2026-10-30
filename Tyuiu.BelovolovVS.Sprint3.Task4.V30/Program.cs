@@ -17,8 +17,8 @@ namespace Tyuiu.BelovolovVS.Sprint3.Task4.V30
             Console.WriteLine("* Выполнил: Беловолов В.С.                                                *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* УСЛОВИЕ:                                                                *");
-            Console.WriteLine("* На отрезке, где x принимает значения от -5 до 5, вычислить значение     *");
-            Console.WriteLine("* функции y = sin(x)/x. При x = 0 пропустить значение.                    *");
+            Console.WriteLine("* На отрезке, где х принимает значения от -5 до 5, вычислить значение     *");
+            Console.WriteLine("* функции y = sin(x)/x + 0.25. При x = 0 пропустить значение.            *");
             Console.WriteLine("* Полученные значения суммировать.                                        *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
@@ -35,7 +35,7 @@ namespace Tyuiu.BelovolovVS.Sprint3.Task4.V30
             Console.WriteLine("***************************************************************************");
 
             double res = ds.Calculate(startValue, stopValue);
-            Console.WriteLine($"Сумма ряда = {res}");
+            Console.WriteLine($"Сумма значений функции = {res}");
 
             Console.ReadKey();
         }

@@ -6,23 +6,19 @@ namespace Tyuiu.BelovolovVS.Sprint3.Task4.V30.Lib
     {
         public double Calculate(int startValue, int stopValue)
         {
-            if (startValue > stopValue)
+            double sum = 0;
+
+            for (int x = startValue; x <= stopValue; x++)
             {
-                int temp = startValue;
-                startValue = stopValue;
-                stopValue = temp;
+                if (x == 0)
+                {
+                    continue;
+                }
+
+                sum += (Math.Sin(x) / x) + 0.25;
             }
 
-            long sum = 0;
-            int count = 0;
-
-            for (int i = startValue; i <= stopValue; i++)
-            {
-                sum += i;
-                count++;
-            }
-
-            return count == 0 ? 0 : (double)sum / count;
+            return Math.Round(sum, 3);
         }
     }
 }

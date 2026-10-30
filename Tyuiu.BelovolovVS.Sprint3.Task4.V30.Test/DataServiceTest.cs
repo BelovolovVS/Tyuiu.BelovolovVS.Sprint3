@@ -15,7 +15,7 @@ namespace Tyuiu.BelovolovVS.Sprint3.Task4.V30.Test
             int stopValue = 5;
 
             double res = ds.Calculate(startValue, stopValue);
-            double expected = 0.0;
+            double expected = 1.924;
 
             Assert.AreEqual(expected, res);
         }
