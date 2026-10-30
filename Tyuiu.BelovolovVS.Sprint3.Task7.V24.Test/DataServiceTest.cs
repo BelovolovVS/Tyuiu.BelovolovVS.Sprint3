@@ -16,9 +16,8 @@ namespace Tyuiu.BelovolovVS.Sprint3.Task7.V24.Test
 
             int len = stopValue - startValue + 1;
 
-            double[] valueWaitArray;
-            valueWaitArray = new double[len];
-            
+            double[] valueWaitArray = new double[len];
+
             valueWaitArray[0] = 7.83;
             valueWaitArray[1] = 6.22;
             valueWaitArray[2] = 6.36;
@@ -31,9 +30,7 @@ namespace Tyuiu.BelovolovVS.Sprint3.Task7.V24.Test
             valueWaitArray[9] = -6.63;
             valueWaitArray[10] = -8.24;
 
-            double[] res;
-            res = new double[len];
-            res = ds.GetMassFunction(startValue, stopValue);
+            double[] res = ds.GetMassFunction(startValue, stopValue);
             
             CollectionAssert.AreEqual(valueWaitArray, res);
         }
