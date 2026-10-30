@@ -15,7 +15,14 @@ namespace Tyuiu.BelovolovVS.Sprint3.Task7.V24.Lib
 
             for (int x = startValue; x <= stopValue; x++)
             {
-                y = Math.Round(Math.Sin(x), 2); 
+                if (x + 1.2 == 0)
+                {
+                    y = 0;
+                }
+                else
+                {
+                    y = Math.Round(2 * x + (Math.Sin(x) / (x + 1.2)) + (2 * Math.Sin(x)), 2);
+                }
                 
                 valueArray[count] = y;
                 count++;
