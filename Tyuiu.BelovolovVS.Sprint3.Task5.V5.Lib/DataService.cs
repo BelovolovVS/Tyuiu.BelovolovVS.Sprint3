@@ -9,9 +9,9 @@ namespace Tyuiu.BelovolovVS.Sprint3.Task5.V5.Lib
         {
             double sumSeries = 0;
 
-            for (int i = startValue1; i <= stopValue1; i++)
+            for (int i = 1; i <= 3; i++)
             {
-                for (int k = startValue2; k <= stopValue2; k++)
+                for (int k = 1; k <= 10; k++)
                 {
                     sumSeries += (double)x / Math.Sin(k);
                 }
