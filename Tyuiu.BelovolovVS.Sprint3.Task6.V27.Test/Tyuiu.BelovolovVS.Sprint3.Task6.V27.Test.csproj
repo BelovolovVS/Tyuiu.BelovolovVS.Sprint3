@@ -21,7 +21,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\ClassLibraryTyuiu.BelovolovVS.Sprint3.Task6.V27.Lib\ClassLibraryTyuiu.BelovolovVS.Sprint3.Task6.V27.Lib.csproj" />
+      <ProjectReference Include="..\Tyuiu.BelovolovVS.Sprint3.Task6.V27.Lib\Tyuiu.BelovolovVS.Sprint3.Task6.V27.Lib.csproj" />
     </ItemGroup>
 
 </Project>
