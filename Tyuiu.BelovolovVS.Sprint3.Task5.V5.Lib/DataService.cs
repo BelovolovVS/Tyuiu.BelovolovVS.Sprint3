@@ -13,7 +13,7 @@ namespace Tyuiu.BelovolovVS.Sprint3.Task5.V5.Lib
             {
                 for (int k = startValue2; k <= stopValue2; k++)
                 {
-                    sumSeries += x / Math.Sin(k);
+                    sumSeries += (double)x / Math.Sin(k);
                 }
             }
 
