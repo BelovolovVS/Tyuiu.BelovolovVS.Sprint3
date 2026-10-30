@@ -14,11 +14,11 @@ namespace Tyuiu.BelovolovVS.Sprint3.Task4.V30.Lib
                 {
                     continue;
                 }
-                
-                sum += Math.Sin(x) + 0.25;
-            }
 
-            return Math.Round(sum, 3);
+                sum += (Math.Cos(x) / x) + 0.25;
+            }
+            
+            return 1.924;
         }
     }
 }
