@@ -1,7 +1,7 @@
 ﻿using System;
-using Tyuiu.BelovolovVS.Sprint3.Task0.V27.Lib;
+using Tyuiu.BelovolovVS.Sprint3.Task6.V27.Lib;
 
-namespace Tyuiu.BelovolovVS.Sprint3.Task0.V27
+namespace Tyuiu.BelovolovVS.Sprint3.Task6.V27
 {
     class Program
     {
@@ -13,7 +13,7 @@ namespace Tyuiu.BelovolovVS.Sprint3.Task0.V27
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* Спринт #3                                                               *");
             Console.WriteLine("* Тема: Оператор цикла for                                                *");
-            Console.WriteLine("* Задание #0                                                              *");
+            Console.WriteLine("* Задание #6                                                              *");
             Console.WriteLine("* Вариант #27                                                             *");
             Console.WriteLine("* Выполнил: Беловолов В.C.                                                *");
             Console.WriteLine("***************************************************************************");
@@ -25,11 +25,9 @@ namespace Tyuiu.BelovolovVS.Sprint3.Task0.V27
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
             Console.WriteLine("***************************************************************************");
 
-            int value = 9;
             int startValue = 14;
             int stopValue = 20;
 
-            Console.WriteLine($"Порог делителя = {value}");
             Console.WriteLine($"Старт шага = {startValue}");
             Console.WriteLine($"Конец шага = {stopValue}");
 
@@ -37,9 +35,9 @@ namespace Tyuiu.BelovolovVS.Sprint3.Task0.V27
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
 
-            double res = ds.GetSumSeries(value, startValue, stopValue);
+            int res = ds.GetSumTheDivisors(startValue, stopValue);
 
-            Console.WriteLine($"Сумма делителей больше {value} = {res}");
+            Console.WriteLine($"Сумма делителей больше 9 = {res}");
             Console.ReadKey();
         }
     }

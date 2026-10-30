@@ -1,21 +1,20 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Tyuiu.BelovolovVS.Sprint3.Task0.V27.Lib;
+using Tyuiu.BelovolovVS.Sprint3.Task6.V27.Lib;
 
-namespace Tyuiu.BelovolovVS.Sprint3.Task0.V27.Test
+namespace Tyuiu.BelovolovVS.Sprint3.Task6.V27.Test
 {
     [TestClass]
     public class DataServiceTest
     {
         [TestMethod]
-        public void ValidGetSumSeries()
+        public void ValidGetSumTheDivisors()
         {
             DataService ds = new DataService();
-            int value = 9;
             int startValue = 14;
             int stopValue = 20;
 
-            double res = ds.GetSumSeries(value, startValue, stopValue);
-            double expected = 129;
+            int res = ds.GetSumTheDivisors(startValue, stopValue);
+            int expected = 129;
 
             Assert.AreEqual(expected, res);
         }
