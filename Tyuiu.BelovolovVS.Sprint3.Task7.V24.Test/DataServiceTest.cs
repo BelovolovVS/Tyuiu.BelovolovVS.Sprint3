@@ -15,7 +15,6 @@ namespace Tyuiu.BelovolovVS.Sprint3.Task7.V24.Test
             int stopValue = 5;
 
             int len = stopValue - startValue + 1;
-
             double[] valueWaitArray = new double[len];
 
             valueWaitArray[0] = 7.83;
