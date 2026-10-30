@@ -1,6 +1,6 @@
-﻿using Tyuiu.BelovolovVS.Sprint3.Task2.V30.Lib;
+﻿using Tyuiu.BelovolovVS.Sprint3.Task4.V30.Lib;
 
-namespace Tyuiu.BelovolovVS.Sprint3.Task2.V30
+namespace Tyuiu.BelovolovVS.Sprint3.Task4.V30
 {
     class Program
     {
@@ -11,8 +11,8 @@ namespace Tyuiu.BelovolovVS.Sprint3.Task2.V30
             Console.Title = "Спринт #3 | Выполнил: Беловолов В. С. | Группа: ПИНб-26-1";
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* Спринт #3                                                               *");
-            Console.WriteLine("* Тема: Оператор цикла for                                                *");
-            Console.WriteLine("* Задание #2                                                              *");
+            Console.WriteLine("* Тема: Использование операторов continue и break в циклах                *");
+            Console.WriteLine("* Задание #4                                                              *");
             Console.WriteLine("* Вариант #30                                                             *");
             Console.WriteLine("* Выполнил: Беловолов В.С.                                                *");
             Console.WriteLine("***************************************************************************");
@@ -24,7 +24,6 @@ namespace Tyuiu.BelovolovVS.Sprint3.Task2.V30
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
             Console.WriteLine("***************************************************************************");
 
-            double value = 0;
             int startValue = -5;
             int stopValue = 5;
 
@@ -35,8 +34,7 @@ namespace Tyuiu.BelovolovVS.Sprint3.Task2.V30
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
 
-            double res = ds.GetMultiplySeries(value, startValue, stopValue);
-            
+            double res = ds.Calculate(startValue, stopValue);
             Console.WriteLine($"Сумма ряда = {res}");
 
             Console.ReadKey();

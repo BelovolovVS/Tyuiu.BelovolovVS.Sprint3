@@ -1,22 +1,28 @@
 ﻿using tyuiu.cources.programming.interfaces.Sprint3;
 
-namespace Tyuiu.BelovolovVS.Sprint3.Task2.V30.Lib
+namespace Tyuiu.BelovolovVS.Sprint3.Task4.V30.Lib
 {
-    public class DataService : ISprint3Task2V30
+    public class DataService : ISprint3Task4V30
     {
-        public double GetMultiplySeries(double value, int startValue, int stopValue)
+        public double Calculate(int startValue, int stopValue)
         {
-            double sum = 0;
-
-            for (int x = startValue; x <= stopValue; x++)
+            if (startValue > stopValue)
             {
-                if (x == 0)
-                    continue;
-
-                sum = sum + Math.Sin(x) / x;
+                int temp = startValue;
+                startValue = stopValue;
+                stopValue = temp;
             }
 
-            return Math.Round(sum, 3);
+            long sum = 0;
+            int count = 0;
+
+            for (int i = startValue; i <= stopValue; i++)
+            {
+                sum += i;
+                count++;
+            }
+
+            return count == 0 ? 0 : (double)sum / count;
         }
     }
 }
