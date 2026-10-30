@@ -1,16 +1,22 @@
 ﻿using System;
+using tyuiu.cources.programming.interfaces.Sprint3;
 
 namespace Tyuiu.BelovolovVS.Sprint3.Task5.V5.Lib
 {
-    public class DataService
+    public class DataService : ISprint3Task5V5
     {
         public double GetSumSumSeries(int x, int startValue1, int stopValue1, int startValue2, int stopValue2)
         {
             double sumSeries = 0;
 
-            for (int i = startValue1; i <= stopValue2; i++)
+            int iStart = Math.Min(startValue1, stopValue1);
+            int iStop = Math.Max(startValue1, stopValue1);
+            int kStart = Math.Min(startValue2, stopValue2);
+            int kStop = Math.Max(startValue2, stopValue2);
+
+            for (int i = iStart; i <= iStop; i++)
             {
-                for (int k = startValue2; k <= stopValue1; k++)
+                for (int k = kStart; k <= kStop; k++)
                 {
                     sumSeries += (double)x / Math.Sin(k);
                 }
