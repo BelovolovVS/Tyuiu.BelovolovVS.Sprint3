@@ -14,8 +14,8 @@ namespace Tyuiu.BelovolovVS.Sprint3.Task4.V30.Lib
                 {
                     continue;
                 }
-
-                sum += (Math.Sin(x) / x) + 0.25;
+                
+                sum += Math.Sin(x) + 0.25;
             }
 
             return Math.Round(sum, 3);
